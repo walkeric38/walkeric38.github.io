@@ -30,9 +30,21 @@
             <figure><a href="assets/custom-arduino-assembled.png" target="_blank" rel="noopener"><img src="assets/custom-arduino-assembled.png" width="593" height="473" alt="Assembled custom Arduino Uno board with microcontroller, USB connector, power input, headers, and labeled test points" loading="lazy"></a><figcaption>Assembled custom Arduino Uno</figcaption></figure>
             <figure><a href="assets/custom-arduino-layout.png" target="_blank" rel="noopener"><img src="assets/custom-arduino-layout.png" width="588" height="470" alt="Custom Arduino PCB layout showing component placement, signal routing, and bottom ground plane" loading="lazy"></a><figcaption>PCB layout and ground plane</figcaption></figure>
           </div>
+          <div class="report-area"><span class="label">Lab report</span><span class="report-pending">PDF coming soon</span></div>
         </article>
-        <article id="board-1" class="board-card"><p class="label">PCB coursework</p><h3>Board 1</h3></article>
-        <article id="board-2" class="board-card"><p class="label">PCB coursework</p><h3>Board 2</h3></article>
+        <article id="board-2" class="board-card board-feature">
+          <p class="label">PCB Design · Board 2</p>
+          <h3>Comparing Switching Noise with Good and Bad Layout</h3>
+          <p>I designed, assembled, and tested two electrically identical hex-inverter circuits with different PCB layouts, driven by a common 555 timer operating at approximately 500 Hz.</p>
+          <p>The good layout uses a continuous ground plane and a decoupling capacitor placed close to the inverter’s power pin. The bad layout uses ground traces in place of a continuous plane and positions the decoupling capacitor farther from the IC.</p>
+          <p>Test points provide access to the quiet-HIGH outputs, quiet-LOW outputs, and board-level power rail. Comparing switching-noise measurements at these points allows the effects of grounding and decoupling layout to be evaluated.</p>
+          <div class="board-gallery">
+            <figure><a href="assets/board-2-assembled.png" target="_blank" rel="noopener"><img src="assets/board-2-assembled.png" width="614" height="597" alt="Assembled Board 2 with a common 555 timer above bad-layout and good-layout hex-inverter circuits, illuminated LEDs, and labeled test points" loading="lazy"></a><figcaption>Assembled board with both inverter circuits</figcaption></figure>
+            <figure><a href="assets/board-2-layout.png" target="_blank" rel="noopener"><img src="assets/board-2-layout.png" width="606" height="600" alt="Board 2 PCB layout comparing ground traces and distant decoupling on the left with a ground plane and local decoupling on the right" loading="lazy"></a><figcaption>PCB layout comparing grounding and decoupling</figcaption></figure>
+          </div>
+          <div class="report-area"><span class="label">Lab report</span><span class="report-pending">PDF coming soon</span></div>
+        </article>
+        <article id="board-1" class="board-card"><p class="label">PCB Design · Board 1</p><h3>Board 1</h3><div class="report-area"><span class="label">Lab report</span><span class="report-pending">PDF coming soon</span></div></article>
       </div>
     </section>
     <section class="project-section" aria-labelledby="other-title">

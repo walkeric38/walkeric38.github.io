@@ -14,10 +14,13 @@ main,.nav,.site-footer{width:min(1080px,calc(100% - 3rem));margin-inline:auto}.s
 h3 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 .8rem; font-weight: 650; }
 .featured-project { padding: 1.75rem 0; max-width: 75ch; }
 .featured-project p { color: var(--muted); margin: 0; }
-.board-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 1rem; padding-top: 1.5rem; }
+.board-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-top: 1.5rem; }
 .board-card { border: 1px solid var(--rule); padding: 1.5rem; min-height: 145px; background: white; }
 .board-card h3 { margin-bottom: 0; }
 .board-feature { grid-column: 1 / -1; }
+.report-area { display: flex; align-items: center; flex-wrap: wrap; gap: 1rem; margin-top: 1.5rem; padding-top: 1rem; border-top: 1px solid var(--rule); }
+.report-area .label { margin: 0; }
+.report-pending { color: var(--muted); font-size: .9rem; }
 .board-feature h3 { margin-bottom: 1rem; }
 .board-feature > p:not(.label) { color: var(--muted); max-width: 80ch; }
 .board-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1.5rem; margin-top: 1.5rem; }
