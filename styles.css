@@ -14,6 +14,25 @@ main,.nav,.site-footer{width:min(1080px,calc(100% - 3rem));margin-inline:auto}.s
 h3 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 .8rem; font-weight: 650; }
 .featured-project { padding: 1.75rem 0; max-width: 75ch; }
 .featured-project p { color: var(--muted); margin: 0; }
+.capstone-story { padding: 2rem 0 .5rem; }
+.capstone-intro { display: grid; grid-template-columns: 1.5fr 1fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+.capstone-intro h3 { font: normal clamp(1.8rem, 3.5vw, 2.6rem)/1.15 Georgia, serif; letter-spacing: -.03em; }
+.capstone-story p { color: var(--muted); }
+.capstone-intro p { margin: 1rem 0 0; }
+.capstone-story h4 { font-size: 1.1rem; margin: 0 0 .75rem; }
+.capstone-role { padding: 1.5rem; background: #e9ede7; border-left: 3px solid var(--accent); }
+.capstone-role ul { margin: 0; padding-left: 1.1rem; color: var(--muted); }
+.capstone-role li + li { margin-top: .75rem; }
+.capstone-screen { max-width: 920px; margin: 2rem auto; }
+.capstone-screen a, .capstone-architecture a { display: block; border: 1px solid var(--rule); border-radius: 4px; overflow: hidden; }
+.capstone-screen img, .capstone-architecture img { display: block; width: 100%; height: auto; }
+.capstone-story figcaption { color: var(--muted); font-size: .9rem; margin-top: .65rem; }
+.capstone-story figcaption strong { color: var(--ink); font-weight: 600; }
+.capstone-hardware { padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+.capstone-subheading p { margin: 0; max-width: 75ch; }
+.capstone-hardware .board-gallery a { aspect-ratio: 842 / 513; }
+.capstone-architecture { margin: 2.5rem 0 1rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
+@media(max-width:720px) { .capstone-intro { grid-template-columns: 1fr; } }
 .board-grid { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding-top: 1.5rem; }
 .board-card { border: 1px solid var(--rule); padding: 1.5rem; min-height: 145px; background: white; }
 .board-card h3 { margin-bottom: 0; }

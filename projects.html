@@ -16,7 +16,39 @@
     <section class="project-section" id="capstone" aria-labelledby="capstone-title">
       <span id="amplifier"></span>
       <div class="section-heading"><h2 id="capstone-title">Senior Capstone</h2><p class="meta">In progress</p></div>
-      <article class="featured-project"><h3>Neural Amp Modeling Guitar Amplifier</h3><p>Our team is developing a portable, touchscreen-controlled guitar amplifier around Neural Amp Modeler. I’ve helped define the system architecture, select components, and perform testing. My interface work uses C and LVGL on an ESP32-S3 to support amplifier selection, adjustable effects, and signal-chain reordering.</p></article>
+      <article class="capstone-story">
+        <div class="capstone-intro">
+          <div>
+            <h3>Neural Amp Modeling Guitar Amplifier</h3>
+            <p>Our team is building a portable, battery-powered guitar amplifier with Neural Amp Modeler (NAM) running on board. It brings modeled tube-amp tones, touchscreen effects controls, and a built-in speaker into one self-contained amp.</p>
+            <p>Players will be able to select amplifier models and dial in effects such as delay and reverb. We’re targeting 6–8 hours of playing time per charge and an open-source design that hobbyists can build, modify, and make their own.</p>
+          </div>
+          <aside class="capstone-role" aria-labelledby="contributions-title">
+            <h4 id="contributions-title">My contributions</h4>
+            <ul>
+              <li>System architecture and component selection</li>
+              <li>Touchscreen interface development using C, LVGL, and ESP32-S3</li>
+              <li>Hardware bring-up, integration, and testing</li>
+            </ul>
+          </aside>
+        </div>
+        <figure class="capstone-screen">
+          <a href="assets/capstone-interface.webp" target="_blank" rel="noopener"><img src="assets/capstone-interface.webp" width="1109" height="648" alt="Guitar amplifier touchscreen prototype with amp model selection, reorderable effects, gain and tone controls, presets, and master volume" loading="lazy"></a>
+          <figcaption><strong>Touchscreen interface prototype</strong> — Amplifier selection, tone controls, effect bypass, and signal-chain reordering.</figcaption>
+        </figure>
+        <div class="capstone-hardware">
+          <div class="capstone-subheading"><h4>Audio hardware</h4><p>The team’s custom carrier board connects the Daisy Seed3 audio processor with the amplifier’s inputs and controls.</p></div>
+          <div class="board-gallery">
+            <figure><a href="assets/capstone-carrier.webp" target="_blank" rel="noopener"><img src="assets/capstone-carrier.webp" width="842" height="513" alt="Assembled custom audio carrier PCB with a Daisy Seed3 module, input and output jacks, and rotary controls" loading="lazy"></a><figcaption>Assembled Seed3 carrier board</figcaption></figure>
+            <figure><a href="assets/capstone-pcb-render.webp" target="_blank" rel="noopener"><img src="assets/capstone-pcb-render.webp" width="842" height="513" alt="Three-dimensional PCB render showing the Seed3 carrier board, connectors, potentiometers, and supporting circuitry" loading="lazy"></a><figcaption>Carrier board PCB render</figcaption></figure>
+          </div>
+        </div>
+        <figure class="capstone-architecture">
+          <h4>System architecture</h4>
+          <a href="assets/capstone-system.webp" target="_blank" rel="noopener"><img src="assets/capstone-system.webp" width="2282" height="1349" alt="Planned amplifier architecture connecting guitar input, audio buffer, Daisy Seed3 processing, DAC, power amplifier and speaker, with ESP32-S3 touchscreen control and battery power regulation" loading="lazy"></a>
+          <figcaption>Planned audio, touchscreen, and power connections. Select the diagram to view it at full size.</figcaption>
+        </figure>
+      </article>
     </section>
     <section class="project-section" id="pcb-design" aria-labelledby="pcb-title">
       <div class="section-heading"><h2 id="pcb-title">PCB Design</h2></div>
