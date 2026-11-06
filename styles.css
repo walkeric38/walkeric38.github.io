@@ -8,13 +8,22 @@ main,.nav,.site-footer{width:min(1080px,calc(100% - 3rem));margin-inline:auto}.s
 .linkedin-button { display: flex; justify-content: center; align-items: center; min-height: 48px; padding: .75rem 1rem; border-radius: 4px; background: #0a66c2; color: #ffffff; text-decoration: none; font-weight: 650; }
 .linkedin-button:hover { background: #084e96; }
 @media(max-width:720px) { .portrait-column { justify-self: start; max-width: 260px; } }
-.home-links { display: grid; gap: .75rem; margin-top: 2rem; }
-.home-links .button-link { display: flex; align-items: center; min-height: 52px; padding: .85rem 1.1rem; background: #ffffff; border-color: var(--rule); color: var(--accent); line-height: 1.45; }
-.home-links .button-link:hover { background: var(--accent); color: #ffffff; border-color: var(--accent); }
+.home-links { display: grid; grid-auto-rows: 1fr; align-items: stretch; gap: .6rem; margin-top: 2rem; }
+.home-links .button-link { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: .5rem .8rem; background: var(--accent); border-color: var(--accent); color: #ffffff; line-height: 1.35; text-align: center; }
+.home-links .button-link:hover { background: #163f3c; border-color: #163f3c; }
 .project-section { margin-bottom: 3rem; scroll-margin-top: 2rem; }
 .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; padding-bottom: 1rem; border-bottom: 1px solid var(--rule); }
 .section-heading h2 { margin: 0; }
 .section-heading .meta { margin: 0; }
+details.project-section { margin-bottom: 1rem; }
+summary.section-heading { align-items: center; padding: 1.3rem 1.5rem; background: #e9ede7; border: 1px solid var(--rule); border-radius: 4px; cursor: pointer; list-style: none; }
+summary.section-heading::-webkit-details-marker { display: none; }
+summary.section-heading::after { content: "+"; font: 1.7rem/1 system-ui, sans-serif; color: var(--accent); }
+details[open] > summary.section-heading::after { content: "−"; }
+summary.section-heading h2 { flex: 1; font-size: clamp(1.5rem, 4vw, 2rem); }
+summary.section-heading:hover { background: #dce5dc; }
+summary.section-heading:focus-visible { outline: 3px solid #b27626; outline-offset: 3px; }
+@media(max-width:460px) { summary.section-heading { padding: 1rem; gap: .7rem; } summary.section-heading .meta { font-size: .75rem; } }
 h3 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 .8rem; font-weight: 650; }
 .featured-project { padding: 1.75rem 0; max-width: 75ch; }
 .featured-project p { color: var(--muted); margin: 0; }

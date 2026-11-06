@@ -13,10 +13,9 @@
   <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="index.html">Eric Walker</a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><div class="nav-links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="projects.html" aria-current="page">Projects</a><a href="resume.html">Résumé</a></div></nav></header>
   <main id="main">
     <header class="page-header"><p class="label">Engineering portfolio</p><h1>Projects</h1><p class="lead">Capstone development, custom circuit boards, and embedded systems.</p></header>
-    <section class="project-section" id="capstone" aria-labelledby="capstone-title">
-      <span id="amplifier"></span>
-      <div class="section-heading"><h2 id="capstone-title">Senior Capstone</h2><p class="meta">In progress</p></div>
-      <article class="capstone-story">
+    <details class="project-section" id="capstone" aria-labelledby="capstone-title">
+      <summary class="section-heading"><h2 id="capstone-title">Senior Capstone</h2><span class="meta">In progress</span></summary>
+      <article class="capstone-story" id="amplifier">
         <div class="capstone-intro">
           <div>
             <h3>Neural Amp Modeling Guitar Amplifier</h3>
@@ -62,9 +61,9 @@
           </div>
         </div>
       </article>
-    </section>
-    <section class="project-section" id="pcb-design" aria-labelledby="pcb-title">
-      <div class="section-heading"><h2 id="pcb-title">PCB Design</h2></div>
+    </details>
+    <details class="project-section" id="pcb-design" aria-labelledby="pcb-title">
+      <summary class="section-heading"><h2 id="pcb-title">PCB Design</h2></summary>
       <div class="board-grid">
         <article id="custom-arduino" class="board-card board-feature">
           <p class="label">PCB Design · Board 3</p>
@@ -101,14 +100,14 @@
           <div class="report-area"><span class="label">Lab report</span><a class="button-link" href="assets/board-1-report.pdf" target="_blank" rel="noopener">View Board 1 Report (PDF)</a></div>
         </article>
       </div>
-    </section>
-    <section class="project-section" aria-labelledby="other-title">
-      <div class="section-heading"><h2 id="other-title">Other Projects</h2></div>
+    </details>
+    <details class="project-section" aria-labelledby="other-title">
+      <summary class="section-heading"><h2 id="other-title">Other Projects</h2></summary>
       <div class="rows">
         <article id="robot"><p class="label">Controls · March 2026</p><div><h3>Wi-Fi-Controlled Robot</h3><p>I built a bidirectional motor driver with MOSFETs and bipolar transistors. An Arduino Nano Every tracks encoder pulses to control how far the robot moves and turns, with wireless control through a web interface and a Raspberry Pi Pico joystick.</p></div></article>
         <article id="sumo-robot"><p class="label">Robotics · September 2025</p><div><h3>Sumo Robot</h3><p>Our three-person team combined a custom PCB, DC motors, and 3D-printed parts in a competition robot. I developed the Pico-based handheld controller that sent driving commands over infrared.</p></div></article>
       </div>
-    </section>
+    </details>
   </main>
   <footer class="site-footer"><span>Eric Walker · Boulder, Colorado</span><a href="mailto:walkeric38@gmail.com">walkeric38@gmail.com</a></footer>
   <script src="site.js"></script>
