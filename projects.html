@@ -32,6 +32,19 @@
             </ul>
           </aside>
         </div>
+        <div class="capstone-explanation">
+          <section aria-labelledby="nam-explained">
+            <h4 id="nam-explained">Capturing an amplifier’s sound</h4>
+            <p>Neural Amp Modeler is an open-source tool that uses neural networks to learn how audio equipment responds to a signal. To capture a guitar amp, a known test signal is played through it and the output is recorded. A model is trained on that input/output pair to reproduce the amp’s response, including its distortion and compression at the captured settings. This makes it possible to create profiles of many different amplifiers and load their sounds into one device.</p>
+            <p>Training happens on a computer. Our embedded design is intended to run compatible trained models in real time on the Daisy Seed3, processing the live guitar signal as you play. Model selection and optimization are part of fitting the audio workload within the processor’s timing and memory limits.</p>
+            <p class="nam-source"><a href="https://neural-amp-modeler.readthedocs.io/en/latest/tutorials/gui.html" target="_blank" rel="noopener">Learn about NAM capture and training</a></p>
+          </section>
+          <section aria-labelledby="processor-architecture">
+            <h4 id="processor-architecture">Two processors, dedicated roles</h4>
+            <p>The Daisy Seed3 handles the audio path. The guitar signal enters through a high-impedance input buffer, is digitized for NAM inference and effects processing, then returns to analog through the DAC before reaching the power amplifier and speaker.</p>
+            <p>A separate ESP32-S3 runs the LVGL touchscreen interface, where the player selects amp models, adjusts parameters, and arranges effects. The planned UART control link sends these settings to the Seed3. Keeping display updates and touch handling on the ESP32-S3 lets the audio processor focus on meeting its real-time deadlines.</p>
+          </section>
+        </div>
         <div class="board-gallery capstone-overview">
           <figure>
             <a href="assets/capstone-interface.webp" target="_blank" rel="noopener"><img src="assets/capstone-interface.webp" width="1109" height="648" alt="Guitar amplifier touchscreen prototype with amp model selection, reorderable effects, gain and tone controls, presets, and master volume" loading="lazy"></a>
