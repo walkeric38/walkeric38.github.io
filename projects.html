@@ -35,9 +35,8 @@
         <div class="capstone-explanation">
           <section aria-labelledby="nam-explained">
             <h4 id="nam-explained">Capturing an amplifier’s sound</h4>
-            <p>Neural Amp Modeler is an open-source tool that uses neural networks to learn how audio equipment responds to a signal. To capture a guitar amp, a known test signal is played through it and the output is recorded. A model is trained on that input/output pair to reproduce the amp’s response, including its distortion and compression at the captured settings. This makes it possible to create profiles of many different amplifiers and load their sounds into one device.</p>
-            <p>Training happens on a computer. Our embedded design is intended to run compatible trained models in real time on the Daisy Seed3, processing the live guitar signal as you play. Model selection and optimization are part of fitting the audio workload within the processor’s timing and memory limits.</p>
-            <p class="nam-source"><a href="https://neural-amp-modeler.readthedocs.io/en/latest/tutorials/gui.html" target="_blank" rel="noopener">Learn about NAM capture and training</a></p>
+            <p>Neural Amp Modeler is an open-source tool that learns an amplifier’s sound using neural networks. A known test signal is played through an amp and its output is recorded. Training on this input/output pair captures the amp’s response, including distortion and compression at the recorded settings.</p>
+            <p>Models are trained on a computer, then loaded onto the embedded system. Our design aims to run compatible models in real time on the Daisy Seed3, letting players switch between amp profiles while keeping the audio workload within the processor’s timing and memory limits.</p>
           </section>
           <section aria-labelledby="processor-architecture">
             <h4 id="processor-architecture">Two processors, dedicated roles</h4>

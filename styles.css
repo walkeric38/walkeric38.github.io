@@ -29,9 +29,9 @@ h3 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 .8rem; font-weight: 650;
 .capstone-role li + li { margin-top: .75rem; }
 .capstone-explanation { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; margin-top: 2rem; padding-top: 1.5rem; border-top: 1px solid var(--rule); }
 .capstone-explanation p { margin: 0 0 1rem; }
-.capstone-explanation .nam-source { font-size: .9rem; }
+.capstone-explanation section p:last-child { margin-bottom: 0; }
 @media(max-width:720px) { .capstone-explanation { grid-template-columns: 1fr; gap: 1rem; } }
-.capstone-overview { margin-block: 2rem; }
+.board-gallery.capstone-overview { margin-top: 1rem; margin-bottom: 1.5rem; }
 .board-gallery.capstone-overview a { aspect-ratio: 16 / 10; }
 .capstone-story figcaption { color: var(--muted); font-size: .9rem; margin-top: .65rem; }
 .capstone-story figcaption strong { color: var(--ink); font-weight: 600; }
