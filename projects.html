@@ -12,20 +12,11 @@
   <a class="skip-link" href="#main">Skip to content</a>
   <header class="site-header"><nav class="nav" aria-label="Primary navigation"><a class="brand" href="index.html">Eric Walker</a><button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false">☰</button><div class="nav-links"><a href="index.html">Home</a><a href="research.html">Research</a><a href="projects.html" aria-current="page">Projects</a><a href="resume.html">Résumé</a></div></nav></header>
   <main id="main">
-    <header class="page-header"><p class="label">Portfolio</p><h1>Projects</h1><p class="lead">PCB design, embedded systems, electronics, robotics, and software work.</p></header>
-    <div class="project-categories">
-      <section class="project-category" id="pcb-design">
-        <p class="label">Hardware</p>
-        <h2>PCB Design</h2>
-        <p>Board designs documented from schematic decisions and layout through manufacturing, testing, and revision.</p>
-        <p class="project-status">Case studies and board reports coming soon.</p>
-      </section>
-      <section class="project-category" id="embedded-projects">
-        <p class="label">Engineering</p>
-        <h2>Embedded Systems &amp; Other Projects</h2>
-        <p>Selected electronics, robotics, embedded systems, and software projects.</p>
-        <p class="project-status">Project reports, photographs, and technical details coming soon.</p>
-      </section>
+    <header class="page-header"><p class="label">Engineering portfolio</p><h1>Projects</h1><p class="lead">A guitar amp and two robots, each with a different challenge in hardware and control.</p></header>
+    <div class="rows">
+      <article id="amplifier"><p class="label">Senior capstone<br> In progress</p><div><h2>Digital guitar amplifier</h2><p>Our team is building a portable amplifier around Neural Amp Modeler. I helped map the system and select components. My focus is the 7-inch ESP32-S3 touchscreen. The LVGL prototype lets a player select an amp, adjust effects, and drag them into a different order.</p></div></article>
+      <article id="robot"><p class="label">Controls<br> March 2026</p><div><h2>Wi-Fi-controlled robot</h2><p>I built a bidirectional motor driver with MOSFETs and bipolar transistors. An Arduino Nano Every tracks encoder pulses to control how far the robot moves and turns. I added wireless control through a web interface and a Raspberry Pi Pico joystick.</p></div></article>
+      <article id="pcb-design"><p class="label">PCB &amp; robotics<br> September 2025</p><div><h2>Sumo robot</h2><p>Our three-person team combined a custom PCB, DC motors, and 3D-printed parts in a competition robot. I developed the Pico-based handheld controller that sent driving commands over infrared.</p></div></article>
     </div>
   </main>
   <footer class="site-footer"><span>Eric Walker · Boulder, Colorado</span><a href="mailto:walkeric38@gmail.com">walkeric38@gmail.com</a></footer>
