@@ -24,9 +24,24 @@
   </header>
 
   <main id="main">
-    <header class="page-header"><p class="label">Research experience</p><h1>Colorado Space Grant</h1><p class="lead">Environmental sensing and instrumentation with the CARMA Tech Team.</p><p class="meta">May 2026–present</p></header>
+    <header class="page-header research-header">
+      <div><p class="label">Research experience</p><h1>Colorado Space Grant</h1><p class="lead">Environmental sensing and instrumentation with the CARMA Tech Team.</p><p class="meta">May 2026–present</p></div>
+      <img class="space-grant-logo" src="assets/colorado-space-grant.webp" width="600" height="349" alt="Colorado Space Grant Consortium logo">
+    </header>
     <div class="rows">
-      <article id="stella"><p class="label">Optical sensing</p><div><h2>STELLA Research</h2><p>I build, calibrate, and deploy NASA’s open-source STELLA spectrometers. These instruments measure visible and near-infrared light for research into detecting heat stress in plants.</p></div></article>
+      <article id="stella"><p class="label">Optical sensing</p><div>
+        <h2>STELLA Research</h2>
+        <p>I build, calibrate, and deploy NASA’s open-source STELLA spectrometers. These instruments measure visible and near-infrared light for research into detecting heat stress in plants.</p>
+        <p class="research-description">Our team developed a custom PCB version to improve signal integrity and simplify assembly. Moving the sensor modules from a hand-wired prototyping board to a dedicated PCB creates a more consistent, repeatable build.</p>
+        <figure class="stella-render">
+          <a href="assets/stella-render.webp" target="_blank" rel="noopener"><img src="assets/stella-render.webp" width="766" height="428" alt="Three-dimensional render of the STELLA instrument and enclosure" loading="lazy"></a>
+          <figcaption>STELLA instrument and enclosure render</figcaption>
+        </figure>
+        <div class="board-gallery stella-gallery">
+          <figure><a href="assets/stella-original.webp" target="_blank" rel="noopener"><img src="assets/stella-original.webp" width="601" height="436" alt="Original STELLA assembly with sensor modules mounted on a prototyping board inside its enclosure" loading="lazy"></a><figcaption>Original prototyping-board assembly</figcaption></figure>
+          <figure><a href="assets/stella-pcb.webp" target="_blank" rel="noopener"><img src="assets/stella-pcb.webp" width="1200" height="900" alt="Custom STELLA PCB with microcontroller, environmental sensors, visible and near-infrared spectral sensors, and battery" loading="lazy"></a><figcaption>Custom PCB version for signal integrity and easier assembly</figcaption></figure>
+        </div>
+      </div></article>
       <article id="monitoring-pod"><p class="label">Environmental sensing</p><div><h2>Environmental Monitoring Pod</h2><p>I develop sensor housing and hardware for long-term soil off-gassing and environmental monitoring. My work includes custom enclosures and circuit boards designed for use alongside the STELLA instruments.</p></div></article>
     </div>
   </main>

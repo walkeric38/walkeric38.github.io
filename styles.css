@@ -66,5 +66,15 @@ h3 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 .8rem; font-weight: 650;
 .board-gallery figcaption { font-size: .9rem; color: var(--muted); margin-top: .5rem; }
 @media(max-width:600px) { .board-gallery { grid-template-columns: 1fr; } }
 .project-section .rows { border-top: 0; }
+.research-header { display: grid; grid-template-columns: minmax(0, 1fr) 280px; align-items: center; gap: 2rem; }
+.research-header h1 { font-size: clamp(3rem, 6vw, 5rem); }
+.space-grant-logo { display: block; width: 100%; height: auto; }
+.rows article div p.research-description { margin-top: 1rem; }
+.stella-render { max-width: 420px; margin: 1.5rem auto; }
+.stella-render a { display: block; }
+.stella-render img { display: block; width: 100%; height: auto; }
+.stella-render figcaption, .stella-gallery figcaption { color: var(--muted); font-size: .9rem; margin-top: .5rem; }
+.stella-render figcaption { text-align: center; }
+@media(max-width:720px) { .research-header { grid-template-columns: 1fr; gap: 1.5rem; } .space-grant-logo { max-width: 240px; } }
 @media(max-width:720px){.hero{grid-template-columns:1fr}.portrait-slot{justify-self:start;max-width:260px}.board-grid{grid-template-columns:1fr}.rows article{grid-template-columns:1fr;gap:.5rem}.nav{padding:1rem 0;gap:.6rem}.nav-links{gap:1rem}.page-header{padding:3rem 0 1.8rem}}
 @media(max-width:460px){main,.nav,.site-footer{width:calc(100% - 2rem)}.nav{align-items:start;flex-direction:column}.nav-links{width:100%;justify-content:space-between}.hero{gap:1.7rem}.diagram svg{max-height:160px}.site-footer{gap:.4rem}}
