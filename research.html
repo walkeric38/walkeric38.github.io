@@ -29,19 +29,26 @@
       <img class="space-grant-logo" src="assets/colorado-space-grant.webp" width="600" height="349" alt="Colorado Space Grant Consortium logo">
     </header>
     <div class="rows">
-      <article id="stella"><p class="label">Optical sensing</p><div>
-        <h2>STELLA Research</h2>
-        <p>I build, calibrate, and deploy NASA’s open-source STELLA spectrometers. These instruments measure visible and near-infrared light for research into detecting heat stress in plants.</p>
-        <p class="research-description">Our team developed a custom PCB version to improve signal integrity and simplify assembly. Moving the sensor modules from a hand-wired prototyping board to a dedicated PCB creates a more consistent, repeatable build.</p>
-        <figure class="stella-render">
-          <a href="assets/stella-spin.gif" target="_blank" rel="noopener"><img src="assets/stella-spin.gif" width="480" height="270" alt="Rotating three-dimensional view of the STELLA instrument and enclosure" loading="lazy"></a>
-          <figcaption>Rotating STELLA instrument and enclosure view</figcaption>
-        </figure>
+      <article id="stella">
+        <div class="stella-intro">
+          <div class="stella-copy">
+            <p class="label">Optical sensing</p>
+            <h2>STELLA Research</h2>
+            <p>Our team is evaluating how far NASA’s low-cost, open-source STELLA spectrometers can be used for research. I build, calibrate, and deploy these instruments to investigate their use in measuring plant condition and detecting heat stress.</p>
+            <p>We’ve made software changes to improve reliability and refined the user interface to make the instruments easier to operate during data collection.</p>
+            <p>We first measure light reflected from a highly spectrally neutral white reference sheet, then measure the plant under the same lighting conditions. Comparing the plant and reference readings lets us estimate the plant’s reflectance in the visible and near-infrared bands. From the red and near-infrared reflectance, we calculate the Normalized Difference Vegetation Index (NDVI), an indicator of vegetation greenness and vigor that helps us assess changes in plant condition.</p>
+            <p>Our team also developed a custom PCB version to improve signal integrity and simplify assembly. Moving the sensor modules from a hand-wired prototyping board to a dedicated PCB creates a more consistent, repeatable build.</p>
+          </div>
+          <figure class="stella-render">
+            <a href="assets/stella-spin.gif" target="_blank" rel="noopener"><img src="assets/stella-spin.gif" width="480" height="270" alt="Rotating three-dimensional view of the STELLA instrument and enclosure" loading="lazy"></a>
+            <figcaption>Rotating STELLA instrument and enclosure view</figcaption>
+          </figure>
+        </div>
         <div class="board-gallery stella-gallery">
           <figure><a href="assets/stella-original.webp" target="_blank" rel="noopener"><img src="assets/stella-original.webp" width="601" height="436" alt="Original STELLA assembly with sensor modules mounted on a prototyping board inside its enclosure" loading="lazy"></a><figcaption>Original prototyping-board assembly</figcaption></figure>
           <figure><a href="assets/stella-pcb.webp" target="_blank" rel="noopener"><img src="assets/stella-pcb.webp" width="1200" height="900" alt="Custom STELLA PCB with microcontroller, environmental sensors, visible and near-infrared spectral sensors, and battery" loading="lazy"></a><figcaption>Custom PCB version for signal integrity and easier assembly</figcaption></figure>
         </div>
-      </div></article>
+      </article>
       <article id="monitoring-pod"><p class="label">Environmental sensing</p><div><h2>Environmental Monitoring Pod</h2><p>I develop sensor housing and hardware for long-term soil off-gassing and environmental monitoring. My work includes custom enclosures and circuit boards designed for use alongside the STELLA instruments.</p></div></article>
     </div>
   </main>
