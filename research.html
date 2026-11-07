@@ -36,10 +36,10 @@
         <div class="fred-copy">
             <p class="label">Environmental sensing</p>
             <h2 id="fred">Field Recorder for Environmental Data (FRED)</h2>
-            <p>This summer, I worked on the electronics for FRED. I designed, assembled, and programmed the custom ESP32-S3 PCB and built the pod’s housing.</p>
-            <p>FRED is a battery-powered monitoring pod built for repeated, unattended measurements in the field. It collects soil off-gassing measurements alongside light, temperature, humidity, and soil-probe readings, bringing environmental conditions together in one record.</p>
-            <p>A hardware power timer controls the sampling cycle. The pod powers on, takes its measurements, saves the data, and shuts itself off. After a predetermined interval, the timer powers it back on for the next reading. Switching off between samples conserves battery power during field deployment.</p>
-            <p>Measurements are logged as JSON to an SD card, with GPS providing location records so observations can be associated with their field site.</p>
+            <p>This summer I worked on the development of FRED, a battery-powered environmental monitoring system designed for long-term, unattended field deployment. My work included designing the custom ESP32-S3 PCB in Altium Designer, assembling and testing the hardware, developing the embedded firmware, and building the pod's custom enclosure.</p>
+            <p>FRED collects soil off-gassing measurements alongside environmental data, including ambient light, temperature, humidity, and soil-probe readings. The system integrates multiple sensors and peripherals using I2C, SPI, UART, and RS-485/Modbus communication interfaces.</p>
+            <p>To minimize power consumption, a dedicated hardware timer controls the sampling cycle. At predetermined intervals, the timer powers on the ESP32-S3 to collect sensor measurements and log the data before shutting the system down. This approach reduces battery consumption between measurements, allowing for extended unattended field operation.</p>
+            <p>Measurements are stored in JSON format on an SD card, with GPS coordinates recorded to associate the collected data with its sampling location.</p>
         </div>
         <div class="board-gallery fred-gallery">
           <figure>
@@ -55,12 +55,12 @@
       <article id="stella">
         <div class="stella-intro">
           <div class="stella-copy">
-            <p class="label">Optical sensing</p>
+            <p class="label">Remote sensing</p>
             <h2>STELLA Research</h2>
-            <p>Our team is evaluating how far NASA’s low-cost, open-source STELLA spectrometers can be used for research. I build, calibrate, and deploy these instruments to investigate their use in measuring plant condition and detecting heat stress.</p>
-            <p>We’ve made software changes to improve reliability and refined the user interface to make the instruments easier to operate during data collection.</p>
-            <p>We first measure light reflected from a highly spectrally neutral white reference sheet, then measure the plant under the same lighting conditions. Comparing the plant and reference readings lets us estimate the plant’s reflectance in the visible and near-infrared bands. From the red and near-infrared reflectance, we calculate the Normalized Difference Vegetation Index (NDVI), an indicator of vegetation greenness and vigor that helps us assess changes in plant condition.</p>
-            <p>Our team also developed a custom PCB version to improve signal integrity and simplify assembly. Moving the sensor modules from a hand-wired prototyping board to a dedicated PCB creates a more consistent, repeatable build.</p>
+            <p>Our team is investigating the capabilities of NASA's low-cost, open-source STELLA spectrometers for environmental and plant health research. My work includes assembling, calibrating, and deploying these instruments to evaluate their effectiveness in monitoring vegetation health and identifying signs of plant heat stress.</p>
+            <p>We have implemented software improvements to increase system reliability and refined the user interface to simplify instrument operation and data collection in the field.</p>
+            <p>To assess plant health, we measure reflected light using a spectrally neutral white reference before collecting measurements from plant surfaces under consistent lighting conditions. Comparing these readings allows us to estimate reflectance across visible and near-infrared wavelengths. We then calculate the Normalized Difference Vegetation Index (NDVI) using red and near-infrared reflectance, providing an indicator of vegetation greenness and overall condition.</p>
+            <p>Our team also developed a custom PCB to improve signal integrity, simplify assembly, and increase hardware consistency. Replacing the original hand-wired prototyping board with a dedicated PCB provides a more reliable and repeatable platform for research and field measurements.</p>
           </div>
           <figure class="stella-render">
             <a href="assets/stella-spin.gif" target="_blank" rel="noopener"><img src="assets/stella-spin.gif" width="480" height="270" alt="Rotating three-dimensional view of the STELLA instrument and enclosure" loading="lazy"></a>
