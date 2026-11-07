@@ -73,16 +73,10 @@ h3 { font-size: 1.25rem; line-height: 1.35; margin: 0 0 .8rem; font-weight: 650;
 .carma-logo { display: block; width: 100%; height: auto; border-radius: 50%; }
 #stella { display: block; }
 #monitoring-pod { display: block; }
-.fred-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: center; gap: 2rem; }
+#monitoring-pod .fred-copy p { max-width: none; }
 #monitoring-pod .fred-copy .label { margin: 0 0 .75rem; color: var(--accent); }
 #monitoring-pod .fred-copy h2 { margin-bottom: 1rem; }
 #monitoring-pod .fred-copy p + p { margin-top: 1rem; }
-.fred-enclosure { margin: 0; }
-.fred-hardware { max-width: 760px; margin: 1.5rem auto 0; }
-.fred-enclosure a, .fred-hardware a { display: block; border: 1px solid var(--rule); border-radius: 3px; overflow: hidden; }
-.fred-enclosure img, .fred-hardware img { display: block; width: 100%; height: auto; }
-.fred-enclosure figcaption, .fred-hardware figcaption { color: var(--muted); font-size: .9rem; margin-top: .5rem; }
-@media(max-width:720px) { .fred-intro { grid-template-columns: 1fr; gap: 1.5rem; } }
 .stella-intro { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); align-items: center; gap: 2rem; }
 #stella .stella-copy .label { margin: 0 0 .75rem; color: var(--accent); }
 #stella .stella-copy h2 { margin-bottom: 1rem; }

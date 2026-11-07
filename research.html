@@ -33,24 +33,24 @@
     </header>
     <div class="rows">
       <article id="monitoring-pod">
-        <div class="fred-intro">
-          <div class="fred-copy">
+        <div class="fred-copy">
             <p class="label">Environmental sensing</p>
             <h2 id="fred">Field Recorder for Environmental Data (FRED)</h2>
+            <p>This summer, I worked on the electronics for FRED. I designed, assembled, and programmed the custom ESP32-S3 PCB and built the pod’s housing.</p>
             <p>FRED is a battery-powered monitoring pod built for repeated, unattended measurements in the field. It collects soil off-gassing measurements alongside light, temperature, humidity, and soil-probe readings, bringing environmental conditions together in one record.</p>
             <p>A hardware power timer controls the sampling cycle. The pod powers on, takes its measurements, saves the data, and shuts itself off. After a predetermined interval, the timer powers it back on for the next reading. Switching off between samples conserves battery power during field deployment.</p>
             <p>Measurements are logged as JSON to an SD card, with GPS providing location records so observations can be associated with their field site.</p>
-            <p>My work includes designing and building the enclosure, along with assembling, programming, and testing the custom ESP32-S3 sensor hardware.</p>
-          </div>
-          <figure class="fred-enclosure">
+        </div>
+        <div class="board-gallery fred-gallery">
+          <figure>
             <a href="assets/fred-enclosure.webp" target="_blank" rel="noopener"><img src="assets/fred-enclosure.webp" width="557" height="510" alt="FRED field enclosure with a sloped metal roof and raised frame" loading="lazy"></a>
             <figcaption>FRED field enclosure</figcaption>
           </figure>
+          <figure>
+            <a href="assets/fred-hardware.webp" target="_blank" rel="noopener"><img src="assets/fred-hardware.webp" width="1200" height="900" alt="FRED electronics with an ESP32-S3 main board, GPS module, SD card logger, gas sensor board, and connected soil probe" loading="lazy"></a>
+            <figcaption>Custom FRED main board, gas sensor board, and soil probe</figcaption>
+          </figure>
         </div>
-        <figure class="fred-hardware">
-          <a href="assets/fred-hardware.webp" target="_blank" rel="noopener"><img src="assets/fred-hardware.webp" width="1200" height="900" alt="FRED electronics with an ESP32-S3 main board, GPS module, SD card logger, gas sensor board, and connected soil probe" loading="lazy"></a>
-          <figcaption>Custom FRED main board, gas sensor board, and soil probe</figcaption>
-        </figure>
       </article>
       <article id="stella">
         <div class="stella-intro">
